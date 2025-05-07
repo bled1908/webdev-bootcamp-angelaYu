@@ -1,24 +1,42 @@
-Different types of file path
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipage Websites</title>
+</head>
+<body>
+    <h1>Different Types of File Paths</h1>
 
-1. Absolute File Path:
-    - Example: C:/Project/Images/cat.png
-    - Starts from the root of the file system.
-    - The full path to the file is specified.
-    - It is not dependent on the current working directory.
+    <h2>1. Absolute File Path</h2>
+    <ul>
+        <li>Example: <code>C:/Project/Images/cat.png</code></li>
+        <li>Starts from the root of the file system.</li>
+        <li>The full path to the file is specified.</li>
+        <li>It is not dependent on the current working directory.</li>
+    </ul>
 
-2. Relative File Path:
-    - Example: ../Images/cat.png or Images/cat.png if in the same directory
-    - Starts from the current working directory.
-    - The ".." indicates moving up one directory level.
-    - The "." indicates the current directory.
-    - It is relative to the location of the file that is referencing it.
+    <h2>2. Relative File Path</h2>
+    <ul>
+        <li>Example: <code>../Images/cat.png</code> or <code>Images/cat.png</code> if in the same directory</li>
+        <li>Starts from the current working directory.</li>
+        <li>The <code>..</code> indicates moving up one directory level.</li>
+        <li>The <code>.</code> indicates the current directory.</li>
+        <li>It is relative to the location of the file that is referencing it.</li>
+    </ul>
 
-example:
-    - If the current file is in C:/Project/ and you want to access C:/Project/Images/cat.png, you can use Images/cat.png as the relative path.
-    - If you are in C:/Project/Images/ and want to access C:/Project/cat.png, you would use ../cat.png as the relative path.
-    - If you are in C:/Project/Images/ and want to access C:/Project/Images/cat.png, you would use cat.png as the relative path.
+    <h3>Examples:</h3>
+    <ol>
+        <li>If the current file is in <code>C:/Project/</code> and you want to access <code>C:/Project/Images/cat.png</code>, you can use <code>Images/cat.png</code> as the relative path.</li>
+        <li>If you are in <code>C:/Project/Images/</code> and want to access <code>C:/Project/cat.png</code>, you would use <code>../cat.png</code> as the relative path.</li>
+        <li>If you are in <code>C:/Project/Images/</code> and want to access <code>C:/Project/Images/cat.png</code>, you would use <code>cat.png</code> as the relative path.</li>
+    </ol>
 
-in multipage websites, you have to link to other pages using relative paths.
-    - Example: <a href="./about.html">About Us</a> (if about.html is in the same directory)
-    - Example: <a href="../index.html">Home</a> (if index.html is in the parent directory)
-    - Example: <a href="Images/cat.png">Cat Image</a> (if Images folder is in the same directory)
+    <h2>Using Relative Paths in Multi-Page Websites</h2>
+    <ul>
+        <li>Example: <code>&lt;a href="./about.html"&gt;About Us&lt;/a&gt;</code> (if <code>about.html</code> is in the same directory)</li>
+        <li>Example: <code>&lt;a href="../index.html"&gt;Home&lt;/a&gt;</code> (if <code>index.html</code> is in the parent directory)</li>
+        <li>Example: <code>&lt;a href="Images/cat.png"&gt;Cat Image&lt;/a&gt;</code> (if <code>Images</code> folder is in the same directory)</li>
+    </ul>
+</body>
+</html>
