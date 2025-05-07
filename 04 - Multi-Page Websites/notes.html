@@ -1,0 +1,19 @@
+Different types of file path
+
+1. Absolute File Path:
+    - Example: C:/Project/Images/cat.png
+    - Starts from the root of the file system.
+    - The full path to the file is specified.
+    - It is not dependent on the current working directory.
+
+2. Relative File Path:
+    - Example: ../Images/cat.png or Images/cat.png if in the same directory
+    - Starts from the current working directory.
+    - The ".." indicates moving up one directory level.
+    - The "." indicates the current directory.
+    - It is relative to the location of the file that is referencing it.
+
+example:
+    - If the current file is in C:/Project/ and you want to access C:/Project/Images/cat.png, you can use Images/cat.png as the relative path.
+    - If you are in C:/Project/Images/ and want to access C:/Project/cat.png, you would use ../cat.png as the relative path.
+    - If you are in C:/Project/Images/ and want to access C:/Project/Images/cat.png, you would use cat.png as the relative path.
